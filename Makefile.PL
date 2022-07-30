@@ -10,6 +10,7 @@ my %META = (
 	prereqs     => {
 		runtime => { requires => {qw(
 			perl                     5.008
+			parent                       0
 			Role::Tiny                   0
 			Class::Method::Modifiers     0
 			Net::OAuth2Server        0.004
