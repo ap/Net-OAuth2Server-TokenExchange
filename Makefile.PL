@@ -14,6 +14,9 @@ my %META = (
 			Class::Method::Modifiers     0
 			Net::OAuth2Server        0.004
 		)} },
+		test => { requires => {qw(
+			Test::More                   0
+		)} },
 	},
 	dynamic_config => 0,
 	resources      => {
