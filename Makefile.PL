@@ -7,22 +7,26 @@ my %META = (
 	author      => 'Aristotle Pagaltzis <pagaltzis@gmx.de>',
 	license     => 'perl_5',
 	x_copyright => { holder => 'Aristotle Pagaltzis', year => 2020 },
-	prereqs     => {
-		runtime => { requires => {qw(
-			perl                     5.008
-			parent                       0
-			Role::Tiny                   0
-			Class::Method::Modifiers     0
-			Net::OAuth2Server        0.004
-		)} },
-		test => { requires => {qw(
-			Test::More                   0
-		)} },
-	},
-	dynamic_config => 0,
-	resources      => {
+	resources   => {
 		repository => { type => 'git', url => "git://$u.git", web => "https://$u" },
 		bugtracker => { web => "https://$u/issues" },
+	},
+	dynamic_config => 0,
+	prereqs => {
+		runtime => {
+			requires => {qw(
+				perl 5.008
+				parent 0
+				Role::Tiny 0
+				Class::Method::Modifiers 0
+				Net::OAuth2Server 0.004
+			)},
+		},
+		test => {
+			requires => {qw(
+				Test::More 0
+			)},
+		},
 	},
 );
 
